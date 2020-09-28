@@ -7,18 +7,19 @@ import javax.validation.Valid;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
     public UserRepository userRepository;
 
-    @GetMapping("users")
+    @GetMapping("/")
     public Iterable<User> index()
     {
         return userRepository.findAll();
     }
 
-    @GetMapping("users/{user}")
+    @GetMapping("{user}")
      public Optional<User> update(@PathVariable Long id){
         return userRepository.findById(id);
     }
@@ -29,14 +30,14 @@ public class UserController {
         return userRepository.save(user);
     }
 
-    @PutMapping("users/{id}")
+    @PutMapping("{id}")
     public User update(@RequestBody User user, @PathVariable Long id)
     {
         Optional<User> userResult =  userRepository.findById(id);
         return userResult.orElseGet(User::new);
     }
 
-    @DeleteMapping("user/{user}")
+    @DeleteMapping("{user}")
     void delete(@PathVariable Long id)
     {
         userRepository.deleteById(id);

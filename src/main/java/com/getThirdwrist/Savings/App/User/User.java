@@ -15,6 +15,9 @@ public class User {
     @NotBlank(message = "name required")
     private String name;
 
+    @NotBlank(message = "Password field required")
+    private String password;
+
     @NotNull(message = "name required")
     private Long bankAccountNumber;
 
@@ -29,6 +32,9 @@ public class User {
 
     @NotBlank(message = "email required")
     private String email;
+
+    @NotNull(message = "username required")
+    private String username;
 
     @NotBlank(message = "phone required")
     private String phone;
@@ -65,6 +71,10 @@ public class User {
         this.name = name;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public void setBankAccountNumber(Long bankAccountNumber) {
         this.bankAccountNumber = bankAccountNumber;
     }
@@ -81,8 +91,24 @@ public class User {
         this.profileAvatar = profileAvatar;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public Long getBankAccountNumber() {
@@ -113,16 +139,13 @@ public class User {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getUsername() {
+        return username;
     }
 
     public String getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
     
 }
