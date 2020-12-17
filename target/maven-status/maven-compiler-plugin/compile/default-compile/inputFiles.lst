@@ -1,4 +1,5 @@
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Transaction/TransactionService.java
+/Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Exceptions/ApiException.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Security/JWTAuthenticationFilter.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Transaction/TransactionController.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/User/UserService.java
@@ -8,10 +9,12 @@
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/User/UserController.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Wallet/WalletService.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Security/UserDetailsServiceImpl.java
+/Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Exceptions/RestExceptionHandler.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Security/JWTAuthorizationFilter.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Wallet/WalletRepository.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Transaction/Transaction.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Auth/AuthService.java
+/Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/ApiResponse.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Wallet/WalletController.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/Wallet/Wallet.java
 /Users/Akunne/Documents/Code-projects/Java-projects/savings-platoform/src/main/java/com/getThirdwrist/Savings/App/User/UserRepository.java

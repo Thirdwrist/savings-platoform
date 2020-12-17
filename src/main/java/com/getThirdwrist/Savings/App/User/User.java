@@ -1,5 +1,7 @@
 package com.getThirdwrist.Savings.App.User;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -10,7 +12,7 @@ public class User {
 
     @Id 
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @NotBlank(message = "name required")
     private String name;
@@ -103,10 +105,15 @@ public class User {
         this.phone = phone;
     }
 
+    public Long getId(){
+        return id;
+    }
+
     public String getName() {
         return name;
     }
 
+    @JsonIgnore
     public String getPassword() {
         return password;
     }
@@ -127,10 +134,12 @@ public class User {
         return profileAvatar;
     }
 
+    @JsonIgnore
     public Timestamp getCreatedAt() {
         return createdAt;
     }
 
+    @JsonIgnore
     public Timestamp getUpdatedAt() {
         return updatedAt;
     }

@@ -1,11 +1,14 @@
 com/getThirdwrist/Savings/App/Auth/AuthController.class
 com/getThirdwrist/Savings/App/SavingsAppApplication.class
+com/getThirdwrist/Savings/App/Exceptions/ApiException.class
 com/getThirdwrist/Savings/App/Security/JWTAuthenticationFilter.class
 com/getThirdwrist/Savings/App/Security/JWTAuthorizationFilter.class
 com/getThirdwrist/Savings/App/Security/SecurityConfig.class
+com/getThirdwrist/Savings/App/Exceptions/RestExceptionHandler.class
 com/getThirdwrist/Savings/App/Security/SecurityConstants.class
 com/getThirdwrist/Savings/App/Security/UserDetailsServiceImpl.class
 com/getThirdwrist/Savings/App/User/User.class
 com/getThirdwrist/Savings/App/User/UserService.class
+com/getThirdwrist/Savings/App/ApiResponse.class
 com/getThirdwrist/Savings/App/User/UserRepository.class
 com/getThirdwrist/Savings/App/User/UserController.class
