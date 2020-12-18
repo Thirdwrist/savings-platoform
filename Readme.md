@@ -1,14 +1,14 @@
-##Savings platform
-###Stacks
+##  Savings platform
+#### Stacks
 1. Java
 2. Spring boot
 3. Mysql
 
-###Description:
+#### Description:
 To create a bare bone savings platform like what is 
 attainable on [PiggyVest](piggyvest.com) and [CowryWise](cowrywise.com) 
 
-###TODO
+#### TODO
 (task list still being updated and shuffled)
 1.  SQL structure 
 2.  Scaffold application 
