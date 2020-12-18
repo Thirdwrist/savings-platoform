@@ -1,35 +1,40 @@
 package com.getThirdwrist.Savings.App.Wallet;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.security.Timestamp;
 
 @Entity
-public class WalletPolicies {
+public class WalletPolicy {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @NotBlank(message = "name required")
     private String name;
     private String description;
+    @Column(name = "release_interval")
     private String releaseInterval;
+    @Column(name = "release_interval_count")
     private Long releaseIntervalCount;
+    @Column(name = "release_count_per_year")
     private Long releaseCountPerYear;
+    @Column(name = "can_release_on_non_release_day")
     private boolean canReleaseOnNonReleaseDay;
+    @Column(name = "release_on_non_release_day_penalty")
     private Long releaseOnNonReleaseDayPenalty;
     private Long interest;
     private boolean hold;
+    @Column(name = "can_break_hold")
     private boolean canBreakHold;
     private String currency;
     private String iconImage;
     private String banner;
+    @Column(name = "created_at")
     private Timestamp createdAt;
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 
-    public WalletPolicies(@NotBlank(message = "name required") String name, String description, String releaseInterval, Long releaseIntervalCount, Long releaseCountPerYear, boolean canReleaseOnNonReleaseDay, Long releaseOnNonReleaseDayPenalty, Long interest, boolean hold, boolean canBreakHold, String currency, String iconImage, String banner) {
+    public WalletPolicy(@NotBlank(message = "name required") String name, String description, String releaseInterval, Long releaseIntervalCount, Long releaseCountPerYear, boolean canReleaseOnNonReleaseDay, Long releaseOnNonReleaseDayPenalty, Long interest, boolean hold, boolean canBreakHold, String currency, String iconImage, String banner) {
         this.name = name;
         this.description = description;
         this.releaseInterval = releaseInterval;
