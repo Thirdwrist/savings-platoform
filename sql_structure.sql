@@ -4,6 +4,7 @@ CREATE TABLE users(
     email varchar(100) not null,
     phone varchar(20),
     username varchar(20) not null,
+    bvn char(20),
     password varchar(255) not null,
     profile_avatar varchar(300) not null,
     created_at timestamp not null default current_timestamp,
